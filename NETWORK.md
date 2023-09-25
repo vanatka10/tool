@@ -4,8 +4,14 @@ ldapsearch -x -H ldap://<IP> -D '<DOMAIN>\<username>' -w '<password>' -b "DC=<1_
 //source:https://book.hacktricks.xyz/network-services-pentesting/pentesting-ldap//  
 # SMB(139,445)
 smbclient
+smbclient -U '%' -N \\\\<IP>\\<SHARE> 
+enum4linux -a <MACHINE IP>
+
 smbmap
 //source:https://book.hacktricks.xyz/network-services-pentesting/pentesting-smb//  
  bloodhound.py to collect and analyze all information about the Active Directory environment  
 //source:https://github.com/dirkjanm/BloodHound.py/tree/master/ //  
 
+# SSH(22)
+/brute force ssh/
+hydra -l <USERNAME> -P /usr/share/wordlists/rockyou.txt ssh://10.10.61.213 
