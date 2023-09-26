@@ -17,6 +17,6 @@ smbmap
 hydra -l <USERNAME> -P /usr/share/wordlists/rockyou.txt ssh://10.10.61.213  
 # gRPC(default 50051)
 grpcui --plaintext IP:PORT   
-grpcurl IP:<PORT list  
+grpcurl IP:PORT list  
 grpcurl --plaintext IP:PORT list  
 grpcurl -plaintext IP:PORT list something   
