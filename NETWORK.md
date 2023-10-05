@@ -6,6 +6,7 @@ ldapsearch -x -H ldap://<IP> -D '<DOMAIN>\<username>' -w '<password>' -b "DC=<1_
 smbclient
 smbclient -U '%' -N \\\\<IP>\\<SHARE>  
 enum4linux -a <MACHINE IP> 
+sudo mount -t cifs -o username=cifs_share_user //10.10.11.222/Development /home/kali/Documents/Machines/HTB/Authority/mount/
 
 smbmap 
 //source:https://book.hacktricks.xyz/network-services-pentesting/pentesting-smb//   
