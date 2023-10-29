@@ -21,3 +21,8 @@ grpcui --plaintext IP:PORT
 grpcurl IP:PORT list  
 grpcurl --plaintext IP:PORT list  
 grpcurl -plaintext IP:PORT list something   
+# MSSQL(1433)
+impacket-mssqlclient -port 1433 DOMAIN/username:password@<target-ip>
+impacket-mssqlclient -port 1433 DOMAIN/username:password@<target-ip> -windows-auth
+
+xp_dirtree
