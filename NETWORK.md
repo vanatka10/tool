@@ -8,6 +8,9 @@ smbclient -U '%' -N \\\\<IP>\\<SHARE>
 enum4linux -a <MACHINE IP>   
 sudo mount -t cifs -o username=cifs_share_user //10.10.11.222/Development /home/kali/Documents/Machines/HTB/Authority/mount/
 
+crackmapexec smb 10.10.11.222 -u 'guest' -p '' --shares --rid-brute 10000 (dùng để hiển thị các smb share và --rid-brute 10000 để brute force username 1000)
+
+
 smbmap 
 //source:https://book.hacktricks.xyz/network-services-pentesting/pentesting-smb//   
  bloodhound.py to collect and analyze all information about the Active Directory environment   
@@ -24,5 +27,8 @@ grpcurl -plaintext IP:PORT list something
 # MSSQL(1433)
 impacket-mssqlclient -port 1433 DOMAIN/username:password@<target-ip>
 impacket-mssqlclient -port 1433 DOMAIN/username:password@<target-ip> -windows-auth
+
+bên trong mssql
+EXEC xp_dirtree '{/path}'
 
 xp_dirtree
