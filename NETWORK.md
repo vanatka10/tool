@@ -32,3 +32,5 @@ bên trong mssql
 EXEC xp_dirtree '{/path}'
 
 xp_dirtree
+# upload 
+https://github.com/flozz/p0wny-shell
