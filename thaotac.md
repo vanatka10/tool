@@ -9,3 +9,5 @@ head
 more
 less
 echo
+# crunch 
+crunch 3 3 0123456789ABCDEF -o 3digits.txt (generate  wordlist)
