@@ -32,13 +32,21 @@ bên trong mssql
 EXEC xp_dirtree '{/path}'
 
 xp_dirtree
-
-# redis-cli
+ 
+# redis-cli (6379)
 sudo apt install redis-tools  
-redis-cli -h {target_IP}    
+redis-cli -h {target_IP}   
 info  
 get  
 select  
 key *  
+# rdp (3389)
+xfreerdp
+xfreerdp /v:<IP> (default username of machine)
+rdesktop -u <username> <IP>
+rdesktop -d <domain> -u <username> -p <password> <IP>
+xfreerdp [/d:domain] /u:<username> /p:<password> /v:<IP>
+xfreerdp [/d:domain] /u:<username> /pth:<hash> /v:<IP> #Pass the hash
+
 # upload 
 https://github.com/flozz/p0wny-shell
