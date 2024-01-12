@@ -32,5 +32,13 @@ bên trong mssql
 EXEC xp_dirtree '{/path}'
 
 xp_dirtree
+
+# redis-cli
+sudo apt install redis-tools  
+redis-cli -h {target_IP}    
+info  
+get  
+select  
+key *  
 # upload 
 https://github.com/flozz/p0wny-shell
