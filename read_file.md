@@ -1,0 +1,3 @@
+dnspy
+strace
+ltrace
