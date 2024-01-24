@@ -48,5 +48,7 @@ rdesktop -d <domain> -u <username> -p <password> <IP>
 xfreerdp [/d:domain] /u:<username> /p:<password> /v:<IP>
 xfreerdp [/d:domain] /u:<username> /pth:<hash> /v:<IP> #Pass the hash
 
+# 88 kerberos
+https://github.com/ropnop/kerbrute
 # upload 
 https://github.com/flozz/p0wny-shell
