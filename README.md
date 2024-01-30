@@ -6,3 +6,4 @@ sqlmap --url="http://10.129.247.166/dashboard.php?search=sandy" --cookie="PHPSES
 https://github.com/vulhub
 # not sure
 sudo update-alternatives --config java
+ps aux | grep "^root*"
