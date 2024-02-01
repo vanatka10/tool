@@ -7,3 +7,7 @@ interact with stage(need) and non-stage payload
 use ```run -j``` to run listener in background and ```jobs``` to see working job
 
 use ```idletime``` when revershell session is completed , this command displays the time for which a user has been idle.
+
+use ```getuid``` to get information about user currrent
+
+use ```getsystem```  getsystem uses all available techniques (shown in the help menu) attempting to leverage SeImpersonatePrivilege and SeDebugPrivilege.
