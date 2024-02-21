@@ -21,4 +21,4 @@ static void init() {
 }
 ```
 and exec lib 
-openssl req -engine /tmp/filename.so
+openssl req -engine ./filename.so
