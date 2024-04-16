@@ -52,3 +52,6 @@ xfreerdp [/d:domain] /u:<username> /pth:<hash> /v:<IP> #Pass the hash
 https://github.com/ropnop/kerbrute
 # upload 
 https://github.com/flozz/p0wny-shell
+# port in linux
+ss -tuln
+lsof -i :[port]
