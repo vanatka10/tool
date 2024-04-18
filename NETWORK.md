@@ -50,6 +50,8 @@ xfreerdp [/d:domain] /u:<username> /pth:<hash> /v:<IP> #Pass the hash
 
 # 88 kerberos
 https://github.com/ropnop/kerbrute
+./kerbrute_linux_amd64 userenum --dc 10.10.11.168 -d scrm.local /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt
+
 # upload 
 https://github.com/flozz/p0wny-shell
 # port in linux
