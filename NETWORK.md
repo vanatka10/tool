@@ -2,6 +2,12 @@
 ldapsearch -x -H ldap://<IP> -D '' -w '' -b "DC=<1_SUBDOMAIN>,DC=<TLD>"  
 ldapsearch -x -H ldap://<IP> -D '<DOMAIN>\<username>' -w '<password>' -b "DC=<1_SUBDOMAIN>,DC=<TLD>"  
 //source:https://book.hacktricks.xyz/network-services-pentesting/pentesting-ldap//   
+# DNS (53)
+dig @trick.htb axfr trick.htb +answer
+dig any victim.com @<DNS_IP>
+https://book.hacktricks.xyz/network-services-pentesting/pentesting-dns
+# SMTP (25)
+smtp-user-enum -m VRFY -U /usr/share/seclists/Usernames/cirt-default-usernames.txt 10.10.11.166 25
 # SMB(139,445)
 smbclient  
 smbclient -U '%' -N \\\\<IP>\\<SHARE>    
