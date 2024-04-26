@@ -2,6 +2,8 @@
 ldapsearch -x -H ldap://<IP> -D '' -w '' -b "DC=<1_SUBDOMAIN>,DC=<TLD>"  
 ldapsearch -x -H ldap://<IP> -D '<DOMAIN>\<username>' -w '<password>' -b "DC=<1_SUBDOMAIN>,DC=<TLD>"  
 //source:https://book.hacktricks.xyz/network-services-pentesting/pentesting-ldap//   
+
+ldapsearch -x -H ldap://10.10.10.182 -b "dc=cascade,dc=local" | grep 'dn' | grep -i 'users'
 # DNS (53)
 dig @trick.htb axfr trick.htb +answer
 dig any victim.com @<DNS_IP>
