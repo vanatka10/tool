@@ -10,6 +10,12 @@ dig any victim.com @<DNS_IP>
 https://book.hacktricks.xyz/network-services-pentesting/pentesting-dns
 # SMTP (25)
 smtp-user-enum -m VRFY -U /usr/share/seclists/Usernames/cirt-default-usernames.txt 10.10.11.166 25
+
+telnet 10.10.11.14 110
+USER administrator@mailing.htb
+PASS homenetworkingadministrator
+LIST
+RETR 1
 # SMB(139,445)
 smbclient  
 smbclient -U '%' -N \\\\<IP>\\<SHARE>    
