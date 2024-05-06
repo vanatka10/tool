@@ -11,6 +11,7 @@ https://book.hacktricks.xyz/network-services-pentesting/pentesting-dns
 # SMTP (25)
 smtp-user-enum -m VRFY -U /usr/share/seclists/Usernames/cirt-default-usernames.txt 10.10.11.166 25
 
+# POP (110,995)
 telnet 10.10.11.14 110
 USER administrator@mailing.htb
 PASS homenetworkingadministrator
