@@ -29,6 +29,8 @@ def send_spoofed_dns_request():
 send_spoofed_dns_request()
 
 ```
+# đọc và grep tất cả các file 
+find . -type f -exec cat {} + |grep -a 'password'
 
 
 
