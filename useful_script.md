@@ -31,8 +31,8 @@ send_spoofed_dns_request()
 ```
 # đọc và grep tất cả các file 
 find . -type f -exec cat {} + |grep -a 'password'
-
-
+# powershell
+ Get-ChildItem -Path ".\a\" -Filter "*.png" -Recurse | ForEach-Object { Copy-Item $_.FullName -Destination (".\b\" + $_.Directory.Name + "_" + $_.Name) }
 
 
 
