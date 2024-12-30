@@ -34,13 +34,12 @@ Kết quả:
 mathematica
 ```
 
-Line 1
-Line 3
-Chèn dòng (i hoặc a): Chèn dòng mới trước hoặc sau dòng khớp với mẫu.
+### Chèn dòng (i hoặc a): Chèn dòng mới trước hoặc sau dòng khớp với mẫu.
 
 Ví dụ (chèn trước):
-
+```
 echo -e "Line 1\nLine 2\nLine 3" | sed '/Line 2/i This is inserted before Line 2'
+```
 
 ### Thay thế với ký tự đặc biệt: sed hỗ trợ các ký tự đặc biệt như \n (xuống dòng), \t (tab), & (lặp lại mẫu đã thay thế).
 
