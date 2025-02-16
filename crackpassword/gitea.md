@@ -1,5 +1,5 @@
 # crack gitea pbkdf2$50000$50
-sha256:<iterations>:<base64_salt>:<base64_hash>
+## sha256:<iterations>:<base64_salt>:<base64_hash>
 
 format: hashpass:salt
 ```
@@ -8,16 +8,12 @@ e531d398946137baea70ed6a680a54385ecff131309c0bd8f225f284406b7cbc8efc5dbef30bf168
                
 ```
 ```
-awk -F: '{print "sha256:50000:" $2 ":" $1}' hash.txt | while IFS= read -r line; do
-  salt=$(echo "$line" | cut -d: -f3 | base64 -w 0);
-  hash=$(echo "$line" | cut -d: -f4 | base64 -w 0);
-  echo "sha256:50000:$salt:$hash" >> hashformat.txt;
-done
 
 grep -v '^$' hash.txt | awk -F: '{print "sha256:50000:" $2 ":" $1}' | while IFS= read -r line; do
-  salt=$(echo "$line" | cut -d: -f3 | base64 -w 0);
-  hash=$(echo "$line" | cut -d: -f4 | base64 -w 0);
-  echo "sha256:50000:$salt:$hash" >> hashformat.txt;
+  salt=$(echo "$line" | cut -d: -f3 | xxd -r -p| base64 -w 0);
+  hash=$(echo "$line" | cut -d: -f4 | xxd -r -p| base64 -w 0);
+  echo "sha256:50000:$salt:$hash";                  
 done
+
 
 ```
