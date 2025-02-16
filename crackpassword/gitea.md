@@ -1,5 +1,5 @@
 # crack gitea pbkdf2$50000$50
-'''sha256:<iterations>:<base64_salt>:<base64_hash>'''
+```sha256:<iterations>:<base64_salt>:<base64_hash>```
 
 format: hashpass:salt
 ```
