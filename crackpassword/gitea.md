@@ -13,4 +13,11 @@ awk -F: '{print "sha256:50000:" $2 ":" $1}' hash.txt | while IFS= read -r line; 
   hash=$(echo "$line" | cut -d: -f4 | base64 -w 0);
   echo "sha256:50000:$salt:$hash" >> hashformat.txt;
 done
+
+grep -v '^$' hash.txt | awk -F: '{print "sha256:50000:" $2 ":" $1}' | while IFS= read -r line; do
+  salt=$(echo "$line" | cut -d: -f3 | base64 -w 0);
+  hash=$(echo "$line" | cut -d: -f4 | base64 -w 0);
+  echo "sha256:50000:$salt:$hash" >> hashformat.txt;
+done
+
 ```
