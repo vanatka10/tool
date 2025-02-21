@@ -1,0 +1,1 @@
+echo "actvn.edu.vn" | waybackurls  | awk -F[/:] '{print $4}' | sort -u
