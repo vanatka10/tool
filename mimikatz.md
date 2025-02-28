@@ -1,3 +1,4 @@
+```
 1. Trích xuất Hashes, Passwords từ LSASS để leo thang đặc quyền
 Lý do: Nếu bạn có quyền truy cập vào một tài khoản với quyền thấp trên hệ thống nhưng LSASS lưu trữ thông tin đăng nhập của tài khoản có quyền cao hơn (ví dụ: admin, domain admin).
 Khai thác:
@@ -72,3 +73,7 @@ Skeleton Key	Quyền Domain Admin	Cài mật khẩu backdoor vào DC
 Kerberoasting	Quyền đọc vé Kerberos	Crack offline Service Account
 DCSync Attack	Quyền Replication	Lấy tất cả NTLM hash của domain
 DCShadow Attack	Quyền Domain Admin	 AD mà không bị log
+
+```
+
+[https://www.wwt.com/api-new/attachments/66a7b8da13599902a3aa53a9/file](https://www.wwt.com/api-new/attachments/66a7b8da13599902a3aa53a9/file)
