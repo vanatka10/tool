@@ -9,5 +9,5 @@ chisel1.exe client 10.10.16.3:9090 R:socks
 chisel server --reverse -p 9090
 # use
 ## edit /etc/proxychains4.conf
-## add sock5 127.0.0.1 1080
+## add socks5 127.0.0.1 1080
 ## proxychains4 <some command>
